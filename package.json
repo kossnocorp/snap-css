@@ -1,0 +1,26 @@
+{
+  "name": "snap-css",
+  "version": "0.3.0",
+  "main": "index.html",
+  "files": [
+    "README.md",
+    "dom/index.js",
+    "index.js"
+  ],
+  "dependencies": {
+    "jsdom": "^9.9.1",
+    "postcss": "^5.2.11",
+    "postcss-prettify": "^0.3.4"
+  },
+  "devDependencies": {
+    "appium-chromedriver": "^2.10.0",
+    "ava": "^0.18.0",
+    "express": "^4.14.1",
+    "fs-promise": "^1.0.0",
+    "get-port": "^2.1.0"
+  },
+  "scripts": {
+    "test": "ava test.js dom/test.js",
+    "test-watch": "yarn test -- --watch"
+  }
+}
