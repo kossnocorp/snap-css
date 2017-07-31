@@ -42,7 +42,7 @@ against HTML loaded into a JSDOM instance using following algorithm:
 - Replace pseudo-classes and pseudo-selectors with empty string before perforimg a query,
   so that `div:hover span` turns into `div span`, `:active` into `*`, etc.
 - Perform every selector and remove the rules that don't match the DOM.
-- Keep all at-rules (e.g. `@page`, `@m.edia`, etc)
+- Keep all at-rules (e.g. `@page`, `@media`, etc)
 - Remove unused `@keyframe` animations and empty rules i.e. empty `@media`.
 - Format CSS using `postcss-prettify`.
 
